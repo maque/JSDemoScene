@@ -1,7 +1,5 @@
 // JavaScript Document
 
-var ColorPalette=new Array();
-
 function Color(){
     this.r=0;
     this.g=0;
@@ -32,10 +30,12 @@ ColorRed = function() {
 }; 
 
 GenerateGrayScale = function() { 
+   var ColorPalette=new Array();
    for(var i=0;i<256;i++){
        
         ColorPalette[i]=ColorGray(i);
    }
+   return ColorPalette;
 }; 
 
 
